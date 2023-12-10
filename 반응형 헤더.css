@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: 'Gasoek One';
+}
+
+a { 
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.navvar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: navy;
+    padding: 8px 12px;    
+}
+
+.navvar__logo {
+    font-size: 24px;
+    color: antiquewhite;
+}
+
+.navvar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navvar__menu li {
+    padding: 8px 12px;
+}
+
+.navvar__menu li:hover {
+    background-color: rgb(149, 165, 255);
+    border-radius: 4px;
+}
+.navvar__icons {
+    list-style: none;
+    color: antiquewhite;
+    display: flex;
+}
+
+.navvar__icons li {
+    padding: 8px 12px;
+}
