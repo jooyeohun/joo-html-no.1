@@ -39,8 +39,50 @@ a {
     list-style: none;
     color: antiquewhite;
     display: flex;
+    padding-left: 0%;
 }
 
 .navvar__icons li {
     padding: 8px 12px;
+}
+
+.navvar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+    .navvar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navvar__menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navvar__menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navvar__icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navvar__toggleBtn {
+        display: block;
+    }
+
+    .navvar__menu.active,
+    .navvar__icons.active {
+        display: flex;
+    }
 }
